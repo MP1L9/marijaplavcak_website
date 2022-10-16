@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html>
+        <head>
+                <title>marija plavčak</title>
+                <meta name="description" content="Portfolio website of Marija Plavčak, architect and UX designer." >
+                <meta charset="utf-8">
+                <meta name="robots" content="index,follow"> 
+                <!--
+                <link rel="icon" href="">
+                -->
+                <meta name="viewport" content="width=device-width, initial-scale=1">
+                <link rel="stylesheet" href="/style copy.css"/>
+                <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;700;900&display=swap" rel="stylesheet">
+                    
+           
+        </head>
+<body>
+
+  <nav>
+
+    <div class="nav-left">
+      <a class="ml7" href="/Homepage.html">marija plavčak</a>
+      
+    </div>
+     
+
+    <div class="navname">
+      <p id="resultImg"  class="ml11" > + </p> </div>
+
+
+
+    <ul class="nav-links">
+      
+            <li>  <div  class="zoom">  <a  class="button" type="button" href="/Projects.html"> projects </a>  </div>  </li>
+            <li>  <div class="zoom">  <a class="button" type="button" href="/About_me.html"> about me </a>  </div>  </li>
+    </ul>
+
+  
+    <div class="burger">
+
+      
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+
+    </div> 
+
+
+      
+    </ul>
+    
+
+</nav>
+
+
+  <main>
+
+    <!--back and prev -->
+    <a class="prev1" class="hover-this" href="#" title="home"> <br> home </br></a>
+      
+    <a class="next1" class="hover-this" href="#" title="product"> <br> product </br>  </a>
+
+    <!-- Back to top button -->
+
+    <a class="up" href="#" title="up"> <br><</br> </a>
+
+
+    
+    <div class="f-container"> 
+        
+      <div class="wrapper">
+        <div class="box"></div>
+        <div class="boom">
+          <a href="/project - 01 .html"> 
+        <img class="image" style="width:80%;height:auto;"  value="R1" onscroll="textImg(this)" onclick="textImg(this)" onmousemove="textImg(this)" onmouseleave="clearCoor()"  src="/img/frog heroes.png"> 
+      </a>  
+      </div>
+      </div>
+
+      <div class="wrapper4" >
+        <div class="box"></div>
+        <div class="boom">
+
+          <a href = "/project - 02.html">
+          <img class="image" style="width:80%;height:auto;" value="R6" onscroll="textImg(this)" onclick="textImg(this)" onmousemove="textImg(this)" onmouseleave="clearCoor()"  src="/img/Mowi tickeitng app promo.png">
+        </a>      
+        </div>
+      </div>
+
+      <div class="wrapper2">
+        <div class="box"></div>
+        <div class="boom">
+        
+          <a href="/project - 03.html"> 
+            <img class="image" style="width:80%;height:auto;" value="R3" onscroll="textImg(this)" onclick="textImg(this)" onmousemove="textImg(this)" onmouseleave="clearCoor()"  src="/img/Flower happines_header image.png">
+          </a>
+        </div>
+      </div>
+
+      
+      <div class="wrapper1">
+        <div class="box"></div>
+        
+          <div class="boom">
+        <a href="/project - 04 .html">
+              <img class="image" style="width:80%;height:auto;" value="R2" onscroll="textImg(this)" onclick="textImg(this)" onmousemove="textImg(this)" onmouseleave="clearCoor()"  src="/img/Comunity laundry phone  preview.png">
+            </a>
+            
+          </div>      
+      
+      </div>
+
+
+
+
+
+    </div>
+
+
+    
+
+    <article>
+
+
+    </article>
+
+   
+  </main>  
+
+  <footer>
+     <p>
+      This is the end. <br>  Let's connect - <a class="button" type="button" href="linkedin.com/in/marija-plavcak"> LinkedIn</a> 
+      - <a class="button" type="button" href="https://www.instagram.com/plavcakova"> Instagram</a> - <a class="button" type="button" href="mailto:ma.plavcak@gmail.com"> E-mail</a> 
+   </p>
+    </p>
+    <br><br>
+    <p>
+      © 2022 Marija Plavčak Rights Reserved
+    </p>
+    
+  </footer>
+</body>
+
+<!--splitting.js-->
+
+<link rel="stylesheet" href="https://unpkg.com/splitting/dist/splitting.css" />
+<link rel="stylesheet" href="https://unpkg.com/splitting/dist/splitting-cells.css" />
+<script src="https://unpkg.com/splitting/dist/splitting.min.js"></script>
+
+<script>
+Splitting();
+</script>
+
+<!--anime.js-->
+
+<script src="/anime-master/lib/anime.min.js"></script>
+<!--jquery-->
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+
+
+<!-- gsap ScrollTrigger-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/ScrollTrigger.min.js"></script>
+
+
+
+
+ <script>
+
+gsap.registerPlugin(ScrollTrigger);
+
+gsap.to(".overlay", {
+    scrollTrigger:{
+        trigger:".overlay",
+        start:"-=600px top",    
+    },
+    y: '-100vh', 
+    ease:'cubic-bezier(.11,.82,.91,.47)',
+    duration:1,
+    delay: .8
+});
+
+
+let imaget = gsap.utils.toArray(".box");
+imaget.forEach((el, i) => {
+gsap.to(el, {
+    scrollTrigger:{
+        trigger:el,
+        start:"-=700px top",
+        markers:false
+        
+         
+    },
+    y: "-100%", 
+    duration: 1,
+    stagger:0.2,
+    ease:'cubic-bezier(.11,.82,.91,.47)',
+    duration:1.8,
+    delay: el.classList.contains(".image") ? 2 : 1
+})
+});
+
+
+gsap.to(".boxtext", {
+    scrollTrigger:{
+        trigger:".boxtext",
+        start:"-=600px top",
+        
+    },
+    y: "-100%", 
+    duration: 2,
+    transformOrigin: "top",
+    stagger:0.5,
+    ease:'power2.out',
+    duration:2,
+    delay:3.1
+});
+
+
+
+
+
+
+
+let text = gsap.utils.toArray(".revealer-inner");
+text.forEach((el, i) => {
+  gsap.from(el, {
+    ease:'power2.out',
+    duration: 2,
+    stagger:1,
+    opacity:0,
+    transformOrigin: "top",
+    delay: el.classList.contains("page-title-secondary") ? 2 : 1,
+    scrollTrigger: {
+      trigger: el,
+      start: "top bottom",
+      
+      end: "bottom top", 
+    }
+  });
+});
+
+</script>
+
+<!-- nav-bar scroll to -->
+<script>
+
+const links = document.querySelectorAll(".scroll_to");
+links.forEach((item) =>{
+  item.addEventListener("click", () =>{
+    const el = document.getElementById(item.getAttribute("data-link"));
+    el.scrollIntoView({behavior:"smooth",block:"start"})
+  })
+})
+
+</script>
+
+<script>
+
+           function textImg(element){
+
+                  let res="";
+
+                  if (element.getAttribute("value") == "R1"){
+                      res= "Frog heroes"
+                  }
+                  
+                  else if (element.getAttribute("value") == "R2"){
+                      res= "Community laundry"
+                  }
+                  else if (element.getAttribute("value") == "R3"){
+                      res= "Flower happines"
+                  }
+                  else if (element.getAttribute("value") == "R4"){
+                      res= "Mowi"
+                  }
+                  else if (element.getAttribute("value") == "R5"){
+                      res="Re-furniture"
+                  }
+                  else{
+                      res ="Mowi"
+                  }
+                
+                  document.getElementById("resultImg").innerHTML =res;
+                  document.getElementById("resultImg").addEventListener("wheel", textImg(this));
+
+            }
+
+
+function clearCoor() {
+  document.getElementById("resultImg").innerHTML = "+";}
+
+
+</script>
+<script src="/app.js"></script>
+<script src="script.js" defer></script>
+</body>
+
+</html>
+
+
+
