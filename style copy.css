@@ -1136,6 +1136,7 @@ figure {
     letter-spacing: -0.2vw;
     position: relative;
     transform: translateY(-1vw);
+    display:none;
   }
 
   .ml3 {
